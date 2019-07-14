@@ -1,0 +1,1 @@
+<p>&copy 2018 - <?php echo date("Y") ?> ImagineCompany</p>
