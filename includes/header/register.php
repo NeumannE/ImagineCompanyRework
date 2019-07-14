@@ -2,16 +2,16 @@
 
 if(isset($_POST["sign_up"])){
 
-	$password_1 = "";
-	$password_2 = "";
+	$password_1 	= "";
+	$password_2 	= "";
 	$username 	= "";
 	$email 		= "";
 
 
-	$password_1 = mysqli_real_escape_string($db_users_con, $_POST['password_1']);
-    $password_2 = mysqli_real_escape_string($db_users_con, $_POST['password_2']);
+	$password_1 	= mysqli_real_escape_string($db_users_con, $_POST['password_1']);
+    	$password_2 	= mysqli_real_escape_string($db_users_con, $_POST['password_2']);
 	$username 	= mysqli_real_escape_string($db_users_con, $_POST['username']);
-    $email 		= mysqli_real_escape_string($db_users_con, $_POST['email']);
+    	$email		= mysqli_real_escape_string($db_users_con, $_POST['email']);
     
       
     if(empty($username)){
