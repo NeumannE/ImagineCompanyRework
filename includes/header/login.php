@@ -30,7 +30,7 @@ if(isset($_POST["log_in"])){
 			$row = mysqli_fetch_assoc($result);
 
 			$_SESSION['username']	= $row['username'];
-			$_SESSION['email']		= $row['email'];
+			$_SESSION['email']	= $row['email'];
 		} else {
 			array_push($errors, "Your username or pasword is wrong");
 		}
